@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>在线订购</title>
+    <link rel="shortcut icon" href="imags/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <!--[if IE]>
+    <script src="js/html.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="top-header">
+        <img class="starbucks-logo" src="imags/logo.png" alt="星巴克咖啡">
+        <nav class="top-menu">
+            <ul>
+                <li>
+                    <a href="home.html" title="星巴克开啡主页">主页</a></li>
+                <li><a href="#" title="咖啡与文化">咖啡与文化</a></li>
+                <li><a href="#" title="饮品及美食">饮品及美食</a></li>
+                <li><a href="#" title="星享俱乐部">星享俱乐部</a></li>
+                <li class="selected"><a href="form.html" title="在线订购">在线订购</a></li>
+                <li><a href="#" title="微信订购">微信订购</a></li>
+                <li><a href="#" title="招聘信息">招聘信息</a></li>
+            </ul>
+        </nav>
+        </header>
+     <main class="form">
+         <h3>欢迎订购您星巴克咖啡豆</h3>
+         <form action="order.html" method="post">
+             <div class="row">
+                 <div class="cell">
+                     <label class="cell">选择你喜欢的咖啡豆品种：</label>
+                 </div>
+                 <div class="cell">
+                     <select>
+                         <option value="houseblend(首选咖啡)" selected="selected">houseblend(首选咖啡)</option>
+                         <option value="kenya(肯尼亚)">kenya(肯尼亚)</option>
+                         <option value="oragaicguatmala(危地马拉有机咖啡)">oragaicguatmala(危地马拉有机咖啡)</option>
+                     </select>
+
+
+
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell">类型：</div>
+                 <div class="cell">
+                     <input type="radio" id="type1" name="type" value="1" checked>
+                     <label for="type1">咖啡豆</label><br>
+                     <input type="radio" id="type2" name="type" value="2">
+                     <label for="type2">咖啡粉</label>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell"><label for="bags">数量（袋）：</label></div>
+                 <div class="cell">
+                     <input type="number" id="bags" name="bags" min="1" max="10000" style="width: 145.73px">
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell"><label for="date">选择你的送货日期</label></div>
+                 <div class="cell">
+                     <input type="date" id="date" name="date">
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell">附加服务：</div>
+                 <div class="cell">
+                     <input type="checkbox" id="extras1" name="extras" value="1">
+                     <label for="extras1">礼品包装</label><br>
+                     <input type="checkbox" id="extras2" name="extras" value="2">
+                     <label for="extras2">商品目录</label><br>
+                     <input type="checkbox" id="extras3" name="extras" value="3">
+                     <label for="extras3">开具发票</label>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell heading">邮寄地址:</div>
+                 <div class="cell"></div>
+             </div>
+             <div class="row">
+                 <div class="cell"><label for="name">收件人姓名：</label></div>
+                 <div class="cell">
+                     <input type="text" id="name" name="name" placeholder="请输入收件人姓名" required >
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell"><label for="address">详细收件地址：</label></div>
+                 <div class="cell">
+                     <input type="text" id="address" name="address"  style="width: 400px;" placeholder="请输入详细收货地址" required >
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell">
+                     <label for="zip">邮编：</label>
+                 </div>
+                 <div class="cell">
+                     <input type="text" id="zip" name="zip" placeholder required>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell">
+                     <label for="phone">联系电话：</label>
+                 </div>
+                 <div class="cell">
+                     <input type="tel" id="phone" name="phone" placeholder="请输入收货人手机号码" required>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell">
+                     <label>备注留言：</label>
+                 </div>
+                 <div class="cell">
+                     <textarea id="comments" name="comments" maxlength="50"></textarea>
+                 </div>
+             </div>
+             <div class="row">
+                 <div class="cell"></div>
+                 <div class="cell">
+                     <input type="submit"  id="make" value="现在下单" style="width: 100px;height: 50px;background-color: #82bf9e;font-size: 1.1em;font-weight: bold">
+                 </div>
+             </div>
+
+
+
+
+
+         </form>
+
+
+
+     </main>
+
+
+
+
+
+
+
+
+</div>
+    <footer class="page-footer">
+    @2015 Starbucks Corporation. All rights reserved.
+    </footer>
+</body>
+</html>

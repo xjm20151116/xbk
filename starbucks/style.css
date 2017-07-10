@@ -1,0 +1,260 @@
+
+/* CSS Document */
+/*兼容低版本的html标签*/
+article,aside,footer,header,section,footer,nav,figure,main{
+    display: block;}
+
+
+/*标签初始化*/
+*{
+    padding: 0;
+    margin: 0;
+    font: inherit;
+
+
+}
+
+/*通用样式*/
+body{
+    background-color: #FFFFFF;
+    font: 14px 微软雅黑，黑体，verdana, Arial, sans-serif;
+    color: #333333;
+    border-top:	8px solid #82bf9e;
+
+}
+
+ul{
+    list-style-type: none;/*去除黑色原点*/
+
+}
+
+/*外层盒子*/
+.wrap{
+    width: 960px;
+    margin: 0px auto;
+
+}
+/*头部区域*/
+.top-header{
+    margin: 10px 0;
+    height: 120px;
+    background-color: #82bf9e;
+
+}
+
+/*logo属性*/
+.starbucks-logo{
+    float: left;
+    margin-left: 20px;
+
+
+}
+
+/*导航*/
+.top-menu{
+    float: left;
+    margin: 83px;
+    margin-left: 30px;
+
+}
+/*导航位置样式*/
+.top-menu ul li{
+    display: inline;
+    background-color: #B07C0C;
+    padding: 5px 10px;
+    margin:0 5px;
+
+
+
+
+}
+
+/*默认第一选项颜色不一样*/
+.top-menu ul li.selected{
+    background-color: #26870A;
+}
+/*设置导航标签*/
+.top-menu ul li a:link, .top-menu ul li a:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight:bold;
+}
+
+
+
+/*侧边栏*/
+.left-aside{
+    float: left;
+margin-top: -50px;
+
+    width: 350px;
+
+}
+
+/*侧边栏样式*/
+.left-aside section{
+    background: #B07C0C url(imags/background.gif) top left;
+    padding: 20px;
+    margin-bottom: 10px;
+
+
+}
+.left-aside h3{
+    color: #26870A;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #B07C0C ;
+}
+
+.news p{
+    line-height: 1.8em;
+    text-indent: 30px;
+
+}
+.news a{
+    color: #26870A;
+    font-weight: bold;
+}
+.drinks{
+    height:480px;
+}
+
+.drinks figure {
+    float: left;
+}
+
+.figure-r{
+    margin-left: 20px;
+    float: left;
+}
+
+.drinks figure img{
+    width:140px;
+    height:140px;
+    border:2px solid #efe5d0;
+}
+
+.drinks figcaption{
+    text-align: center;
+    font-weight: bold;
+    color: #B07C0C;
+}
+
+.clear{
+    clear: both;
+}
+
+/*主内容区域*/
+main{
+    background:#efe5d0 url(imags/background.gif) top left;
+    padding: 50px;
+    margin-left: 360px;
+    margin-top: 15px;
+
+}
+.video-text{
+    color: #26870A;
+    text-align: center;
+}
+main article{
+    border-bottom: 1px dashed #26870A;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+main h3{
+    font-size: 1.5em;
+    color: #26870A;
+    text-align: center;
+
+
+}
+main time{
+    font-size:0.8em;
+    color:#333333;
+}
+main p{
+    line-height:1.5em;
+    text-indent: 30px;
+    margin:10px 0;
+}
+main b{
+    font-weight: bold;
+    color: #0A0808;
+}
+main small{
+    font-size: 0.5em;
+    color: #efe5d0;
+}
+
+/*文章1*/
+
+.ppp{
+    float: left;
+}
+.last-a{
+    border-bottom: none;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+
+}
+/*页脚*/
+.page-footer{
+    clear: both;
+    padding: 15px;
+    margin-top: 10px;
+    background-color: #26870A;
+    color: #0A0808;
+    text-align: center;
+    font-size: 90%;
+}
+
+/*表单区域样式*/
+.form{
+    padding-left: 20px;
+}
+
+main.form{
+    margin-left: 0px;
+}
+
+main.form h3{
+    color: #26870A;
+    font-size: 1.5em;
+    margin-bottom:10px;
+    text-align: center;
+
+}
+
+main.form form{
+    display:table;
+    width: 900px;
+    padding: 10px;
+
+}
+
+main.form.row{
+    display: table-row;
+}
+
+main.form.cell{
+    display: table-cell;
+    vertical-align: top;
+    padding: 3px;
+
+
+}
+main.form.row.cell:first-child{
+    text-align: right;
+    padding-left: 20px;
+
+}
+main.form div.heading{
+    font-weight:bold;
+}
+main.form textarea{
+    width: 400px;
+    height:50px;
+
+}
